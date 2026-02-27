@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | <a href="profile.html">Profile</a> | <a href="registration.html">Registration</a>
+    </nav>
+    <h1>Student Registration Form</h1>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Registration Number:</label><br>
+        <input type="text" name="reg_num"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Semester:</label><br>
+        <input type="radio" name="sem" value="1"> 1st
+        <input type="radio" name="sem" value="2"> 2nd
+        <input type="radio" name="sem" value="3"> 3rd<br><br>
+
+        <label>Course Selection:</label><br>
+        <select name="course">
+            <option value="web">Web Technologies</option>
+            <option value="os">Operating Systems</option>
+            <option value="db">Database Systems</option>
+        </select><br><br>
+
+        <input type="checkbox" required> I agree to terms and conditions<br><br>
+        
+        <button type="submit">Submit Registration</button>
+    </form>
+</body>
+</html>
