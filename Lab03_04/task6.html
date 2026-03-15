@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="task6.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form class="registration">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country">
+                <option value="">Select...</option>
+                <option value="us">USA</option>
+                <option value="uk">UK</option>
+                <option value="ca">Canada</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" name="terms"> I agree to terms</label>
+        </div>
+        <div class="form-group error">
+            <label for="error-example">Error field:</label>
+            <input type="text" id="error-example" class="error-input" value="Invalid value">
+            <span class="error-message">This field has an error.</span>
+        </div>
+        <div class="form-group success">
+            <label for="success-example">Success field:</label>
+            <input type="text" id="success-example" class="success-input" value="Valid value">
+        </div>
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+</body>
+</html>

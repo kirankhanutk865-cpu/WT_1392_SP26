@@ -1,0 +1,76 @@
+/* 5 basic selectors */
+p {
+    color: navy;
+}
+.classy {
+    background-color: lightgray;
+}
+#unique {
+    border: 2px solid green;
+}
+div {
+    font-family: Arial;
+}
+* {
+    margin: 5px;
+}
+
+/* 3 attribute selectors */
+a[target] {
+    color: red;
+}
+input[type="text"] {
+    border: 1px solid blue;
+}
+input[checked] {
+    outline: 2px solid green;
+}
+
+/* 4 combinators */
+.combinator-demo p {
+    color: purple; /* descendant */
+}
+.combinator-demo > p {
+    font-weight: bold; /* child */
+}
+h2 + p {
+    background-color: yellow; /* adjacent sibling */
+}
+h2 ~ p {
+    font-style: italic; /* general sibling */
+}
+
+/* 5 pseudo-classes */
+li:first-child {
+    font-size: 1.2em;
+}
+li:last-child {
+    color: red;
+}
+li:nth-child(2) {
+    text-decoration: underline;
+}
+.pseudo-link:hover {
+    color: orange;
+    font-size: 1.2em;
+}
+.focus-me:focus {
+    background-color: lightblue;
+}
+
+/* 2 pseudo-elements */
+.before-after::before {
+    content: "⭐ ";
+    color: gold;
+}
+.before-after::after {
+    content: " ⭐";
+    color: gold;
+}
+.first-letter-line::first-letter {
+    font-size: 2em;
+    color: darkred;
+}
+.first-letter-line::first-line {
+    background-color: #eee;
+}

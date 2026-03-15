@@ -1,0 +1,38 @@
+/* ::before and ::after */
+.quote::before {
+    content: "“";
+    font-size: 2em;
+    color: gray;
+}
+.quote::after {
+    content: "”";
+    font-size: 2em;
+    color: gray;
+}
+
+/* ::first-letter */
+.first-letter::first-letter {
+    font-size: 3em;
+    color: red;
+    float: left;
+    line-height: 1;
+    margin-right: 5px;
+}
+
+/* ::first-line */
+.first-line::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: lightblue;
+}
+
+/* ::selection */
+::selection {
+    background-color: pink;
+    color: white;
+}
+/* For Firefox */
+::-moz-selection {
+    background-color: pink;
+    color: white;
+}

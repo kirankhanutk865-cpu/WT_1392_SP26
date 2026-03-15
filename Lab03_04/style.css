@@ -1,0 +1,8 @@
+/* External CSS */
+.external {
+    color: blue;
+    text-decoration: underline;
+}
+p {
+    background-color: #f0f0f0;  /* applied to all paragraphs */
+}

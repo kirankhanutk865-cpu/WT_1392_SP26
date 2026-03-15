@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1: Selectors Practice</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <h1>Selectors Practice</h1>
+
+    <!-- Basic selectors -->
+    <p>Element selector (p)</p>
+    <p class="classy">Class selector (.classy)</p>
+    <p id="unique">ID selector (#unique)</p>
+    <div>Universal selector (*) applies to all, but also div element selector</div>
+
+    <!-- Attribute selectors -->
+    <a href="https://example.com" target="_blank">Link with target</a><br>
+    <input type="text" placeholder="Text input">
+    <input type="checkbox" checked> Checked checkbox
+
+    <!-- Combinators -->
+    <div class="combinator-demo">
+        <p>Descendant of .combinator-demo</p>
+        <section>
+            <p>Also descendant</p>
+        </section>
+        <p>Child of .combinator-demo (> would select only direct)</p>
+    </div>
+
+    <h2>Heading before sibling</h2>
+    <p>Adjacent sibling of h2</p>
+    <p>General sibling of h2</p>
+
+    <!-- Pseudo-classes -->
+    <ul>
+        <li>First child</li>
+        <li>Second child</li>
+        <li>Third child</li>
+        <li>Last child</li>
+    </ul>
+    <a href="#" class="pseudo-link">Hover over me</a>
+    <input type="text" class="focus-me" placeholder="Focus me">
+
+    <!-- Pseudo-elements -->
+    <p class="before-after">This has ::before and ::after</p>
+    <p class="first-letter-line">First letter and first line styled. This is more text to show first line effect.</p>
+</body>
+</html>

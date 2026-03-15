@@ -1,0 +1,43 @@
+div {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+.transform:hover {
+    transform: translate(20px, 20px);
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+.transition {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.transition:hover {
+    background-color: steelblue;
+    transform: scale(1.2);
+}
+
+.transform-origin {
+    transform-origin: top left;
+}
+.transform-origin:hover {
+    transform: rotate(30deg);
+}

@@ -1,0 +1,36 @@
+.font1 {
+    font-family: 'Playfair Display', serif;
+}
+.font2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.font3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.size-px { font-size: 20px; }
+.size-em { font-size: 2em; }
+.size-rem { font-size: 2rem; }
+.size-percent { font-size: 200%; }
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.overline { text-decoration: overline; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+.shadow-light {
+    text-shadow: 1px 1px 2px gray;
+}
+.shadow-heavy {
+    text-shadow: 3px 3px 5px black;
+}
+.shadow-multiple {
+    text-shadow: 2px 2px 2px red, 4px 4px 2px blue;
+}

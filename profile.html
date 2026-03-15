@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 02 - Profile</title>
+    <!-- Link to external CSS file (same as schedule) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a> | 
-        <a href="profile.html">Profile</a> | 
-        <a href="schedule.html">Schedule</a> | 
-        <a href="registration.html">Registration</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
     </nav>
-    <hr>
-    <h1>Kiran Khan</h1>
-    <p>I am a student at UET Peshawar studying Computer Science. This is my first web project for the Web Technologies lab.</p>
-    
-    <img src="https://picsum.photos/200" alt="Profile Picture" width="150">
 
-    <h3>Contact Information</h3>
-    <ul>
-        <li>Email: <a href="mailto:your-email@example.com">Send Email</a></li>
-        <li>Phone: <a href="tel:+920000000000">Call Me</a></li>
-    </ul>
+    <main class="profile-container">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="https://picsum.photos/200" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h1>Kiran Khan</h1>
+                <p class="bio">
+                    I am a student at UET Peshawar studying Computer Science. 
+                    This is my first web project for the Web Technologies lab.
+                </p>
+
+                <h3>Contact Information</h3>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a href="mailto:your-email@example.com">Send Email</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+920000000000">Call Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

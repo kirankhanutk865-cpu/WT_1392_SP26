@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Implementation Methods</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS */
+        .internal {
+            color: green;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Implementation Methods</h1>
+
+    <!-- Inline CSS -->
+    <p style="color: red; font-style: italic;">This paragraph uses inline CSS (red, italic).</p>
+
+    <p class="internal">This paragraph uses internal CSS (green, bold).</p>
+
+    <p class="external">This paragraph uses external CSS (blue, underline).</p>
+
+    <p>This paragraph is styled by internal CSS (font-size 18px) but also external may affect it.</p>
+</body>
+</html>

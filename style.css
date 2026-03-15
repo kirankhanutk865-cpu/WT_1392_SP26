@@ -1,0 +1,163 @@
+/* style.css - Lab 3&4 CSS Fundamentals */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+.nav-menu a.active {
+    background-color: #e67e22;
+}
+
+/* Page Heading */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive Table Container */
+.table-responsive {
+    overflow-x: auto;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Table Styling */
+.course-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+}
+
+.course-schedule th,
+.course-schedule td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.course-schedule th {
+    background-color: #34495e;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Zebra striping for tbody rows */
+.course-schedule tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+.course-schedule tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.2s ease;
+}
+
+/* Color-coded courses */
+.course-web {
+    background-color: #e8f4fd !important;
+    color: #0b4f6c;
+    font-weight: 500;
+}
+.course-os {
+    background-color: #fff0e6 !important;
+    color: #a8430d;
+    font-weight: 500;
+}
+.course-lab {
+    background-color: #e6f7e6 !important;
+    color: #1e7e34;
+    font-weight: 500;
+}
+.lunch-break {
+    background-color: #ffe6b3 !important;
+    color: #8a6d2b;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Ensure hover doesn't override course colors */
+.course-schedule tbody tr:hover td {
+    background-color: inherit; /* let the row hover show through */
+}
+.course-schedule tbody tr:hover td.course-web {
+    background-color: #d4eaf7 !important;
+}
+.course-schedule tbody tr:hover td.course-os {
+    background-color: #f7e2d4 !important;
+}
+.course-schedule tbody tr:hover td.course-lab {
+    background-color: #d4f0d4 !important;
+}
+.course-schedule tbody tr:hover td.lunch-break {
+    background-color: #f5d98c !important;
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-menu li {
+        margin: 5px 0;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .course-schedule th,
+    .course-schedule td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

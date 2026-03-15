@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <h1>Combinators</h1>
+
+    <div class="container">
+        <p>Descendant of .container (space) - red</p>
+        <div>
+            <p>Also descendant (still red)</p>
+        </div>
+    </div>
+
+    <div class="parent">
+        <p>Child of .parent (>) - blue</p>
+        <div>
+            <p>Not direct child (not blue)</p>
+        </div>
+    </div>
+
+    <h2>Heading</h2>
+    <p>Adjacent sibling of h2 (+) - green</p>
+    <p>General sibling of h2 (~) - orange (this one too)</p>
+    <p>Also general sibling - orange</p>
+</body>
+</html>

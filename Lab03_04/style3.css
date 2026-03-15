@@ -1,0 +1,26 @@
+/* Elements with a specific attribute */
+a[target] {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* Attribute equals value */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+/* Attribute contains value (partial) */
+img[alt*="image"] {
+    border: 3px solid green;
+}
+
+/* Attribute starts with value */
+a[href^="https"] {
+    background-color: lightgreen;
+}
+
+/* Attribute ends with value */
+img[src$=".svg"] {
+    width: 50px;
+    height: 50px;
+}

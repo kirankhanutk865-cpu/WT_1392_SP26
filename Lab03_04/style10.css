@@ -1,0 +1,37 @@
+div {
+    height: 200px;
+    margin: 20px 0;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.bg-color {
+    background-color: #3498db; /* blue */
+}
+
+.bg-image-repeat {
+    background-image: url('pattern.png');
+    background-repeat: repeat; /* default */
+}
+
+.bg-image-no-repeat {
+    background-image: url('pattern.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-size-cover {
+    background-image: url('pattern.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-attachment {
+    background-image: url('pattern.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}

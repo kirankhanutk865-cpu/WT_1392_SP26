@@ -1,0 +1,93 @@
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(45deg, #f06, #4a90e2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3em;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+    margin: 20px;
+}
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.custom-checkbox label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    background: white;
+}
+.custom-checkbox input[type="checkbox"]:checked + label::before {
+    background: #007bff;
+    border-color: #007bff;
+}
+.custom-checkbox input[type="checkbox"]:checked + label::after {
+    content: "✓";
+    position: absolute;
+    left: 4px;
+    top: -2px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Loading animation */
+.loading {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px;
+    text-indent: -9999px; /* hide text */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Text clipping with background image */
+.text-clip {
+    background: url('https://via.placeholder.com/400x200') no-repeat center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+.text-clip span {
+    background: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Complex shadow */
+.complex-shadow {
+    width: 200px;
+    height: 100px;
+    background: #fff;
+    margin: 30px;
+    box-shadow: 
+        0 0 0 2px red,
+        5px 5px 0 0 blue,
+        10px 10px 0 0 green,
+        15px 15px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

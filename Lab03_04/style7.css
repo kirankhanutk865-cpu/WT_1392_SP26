@@ -1,0 +1,37 @@
+.web-safe {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.google-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.google-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.size-px {
+    font-size: 20px;
+}
+.size-em {
+    font-size: 1.5em;
+}
+.size-rem {
+    font-size: 1.5rem;
+}
+.size-percent {
+    font-size: 150%;
+}
+
+.weight-light {
+    font-weight: 300;
+}
+.weight-bold {
+    font-weight: 700;
+}
+
+.style-italic {
+    font-style: italic;
+}
+.variant-smallcaps {
+    font-variant: small-caps;
+}

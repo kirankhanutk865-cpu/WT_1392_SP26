@@ -1,0 +1,52 @@
+/* Link states */
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+}
+
+/* Form states */
+.focus-input:focus {
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+.check:checked {
+    outline: 2px solid green;
+}
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+}
+
+/* Structural pseudo-classes */
+li:first-child {
+    font-weight: bold;
+}
+li:last-child {
+    color: red;
+}
+li:nth-child(2) {
+    background-color: lightgray;
+}
+li:nth-child(odd) {
+    font-style: italic;
+}
+
+/* Content-based pseudo-classes */
+.empty-box:empty {
+    display: block;
+    width: 100px;
+    height: 20px;
+    background-color: #eee;
+    border: 1px solid black;
+}
+div:not(.empty-box) {
+    margin: 5px 0;
+}

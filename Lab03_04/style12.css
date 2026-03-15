@@ -1,0 +1,25 @@
+img {
+    display: block;
+    margin: 20px 0;
+}
+
+.size-control {
+    width: 200px;
+    height: 150px;
+}
+
+.border-radius {
+    border-radius: 20px;
+    border: 5px solid #ccc;
+}
+
+.object-fit {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* crops to fill */
+    object-position: top; /* focus on top */
+}
+
+.filter {
+    filter: grayscale(50%);
+}

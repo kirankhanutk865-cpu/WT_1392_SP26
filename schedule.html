@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Course Schedule</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Include Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a> | <a href="profile.html">Profile</a> | <a href="schedule.html">Schedule</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="schedule.html" class="active">Schedule</a></li>
+        </ul>
     </nav>
+
     <h1>Weekly Course Schedule</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>09:00 - 10:00</td>
-                <td>Web Tech</td>
-                <td>OS</td>
-                <td>Web Tech</td>
-                <td>OS</td>
-                <td>Lab</td>
-            </tr>
-            <tr>
-                <td>12:00 - 01:00</td>
-                <td colspan="5" align="center">LUNCH BREAK</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <!-- Responsive table wrapper -->
+    <div class="table-responsive">
+        <table class="course-schedule">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td class="course-web">Web Tech</td>
+                    <td class="course-os">OS</td>
+                    <td class="course-web">Web Tech</td>
+                    <td class="course-os">OS</td>
+                    <td class="course-lab">Lab</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 01:00</td>
+                    <td colspan="5" class="lunch-break">LUNCH BREAK</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

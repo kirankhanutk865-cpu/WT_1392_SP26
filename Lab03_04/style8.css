@@ -1,0 +1,38 @@
+.color-opacity {
+    color: rgba(255, 0, 0, 0.6); /* red with 60% opacity */
+}
+
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+
+.underline {
+    text-decoration: underline;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.overline {
+    text-decoration: overline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px gray;
+    font-size: 2em;
+}

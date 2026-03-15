@@ -1,0 +1,32 @@
+img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* Hover effect */
+.hover-effect img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    transition: all 0.3s;
+}
+
+/* CSS filters */
+.filter-effects {
+    filter: blur(2px) brightness(0.8) contrast(150%);
+}
+
+/* Blend mode */
+.blend-mode-image {
+    background: linear-gradient(red, blue);
+    display: inline-block;
+}
+.blend-mode-image img {
+    mix-blend-mode: multiply;
+    display: block;
+}
+
+/* Mask (clip-path) */
+.mask img {
+    clip-path: circle(50% at 50% 50%);
+}
