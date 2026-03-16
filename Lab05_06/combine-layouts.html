@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combining Layouts</title>
+    <link rel="stylesheet" href="combine-layouts.css">
+</head>
+<body>
+    <h1>Combining Layout Techniques</h1>
+
+    <h2>Flexbox inside Grid</h2>
+    <div class="grid-layout">
+        <div class="grid-item">
+            <div class="flex-card">
+                <h3>Card 1</h3>
+                <p>Content</p>
+                <button>Action</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flex-card">
+                <h3>Card 2</h3>
+                <p>Longer content to demonstrate flex column.</p>
+                <button>Action</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flex-card">
+                <h3>Card 3</h3>
+                <p>Content</p>
+                <button>Action</button>
+            </div>
+        </div>
+    </div>
+
+    <h2>Grid inside Flexbox</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="mini-grid">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <p>Some text alongside the grid.</p>
+        </div>
+    </div>
+
+    <h2>Float inside Modern Layout</h2>
+    <div class="float-modern">
+        <img src="https://via.placeholder.com/150" alt="float" class="float-img">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* Base styles (mobile: 0-767px) */
+.container { padding: 10px; }
+.box { background: lightblue; padding: 20px; text-align: center; }
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    .box { background: lightgreen; font-size: 1.2em; }
+}
+
+/* Small Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .box { background: lightcoral; font-size: 1.5em; }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .box { background: gold; font-size: 2em; }
+}
+
+/* Extra Large (1400px and up) */
+@media (min-width: 1400px) {
+    .box { background: violet; font-size: 2.5em; }
+}

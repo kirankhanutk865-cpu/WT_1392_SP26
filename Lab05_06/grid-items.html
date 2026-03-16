@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Items</title>
+    <link rel="stylesheet" href="grid-items.css">
+</head>
+<body>
+    <h1>Grid Item Properties</h1>
+
+    <h2>grid-column & grid-row placement</h2>
+    <div class="grid placement">
+        <div class="item1">1 (col 1-3)</div>
+        <div class="item2">2 (row 2-4)</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <h2>grid-area with named areas</h2>
+    <div class="grid named">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <h2>justify-self & align-self</h2>
+    <div class="grid self">
+        <div class="start">start</div>
+        <div class="end">end</div>
+        <div class="center">center</div>
+        <div class="stretch">stretch</div>
+    </div>
+</body>
+</html>

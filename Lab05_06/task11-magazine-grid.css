@@ -1,0 +1,44 @@
+.magazine {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "featured featured sidebar"
+        "article1 article2 article3"
+        "footer footer footer";
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.magazine-header { grid-area: header; background: #333; color: white; padding: 20px; text-align: center; }
+.featured { grid-area: featured; background: #f4f4f4; padding: 20px; }
+.article1 { grid-area: article1; background: #e7e7e7; padding: 20px; }
+.article2 { grid-area: article2; background: #e7e7e7; padding: 20px; }
+.article3 { grid-area: article3; background: #e7e7e7; padding: 20px; }
+.sidebar { grid-area: sidebar; background: #ddd; padding: 20px; }
+.magazine-footer { grid-area: footer; background: #333; color: white; padding: 20px; text-align: center; }
+
+@media (max-width: 800px) {
+    .magazine {
+        grid-template-areas:
+            "header header"
+            "featured featured"
+            "sidebar sidebar"
+            "article1 article2"
+            "article3 article3"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px) {
+    .magazine {
+        grid-template-areas:
+            "header"
+            "featured"
+            "sidebar"
+            "article1"
+            "article2"
+            "article3"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}

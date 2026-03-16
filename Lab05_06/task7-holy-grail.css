@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body { font-family: Arial; padding: 20px; }
+h2 { margin-top: 40px; }
+
+/* Common styles */
+header, footer { background: #333; color: white; text-align: center; padding: 15px; }
+nav, aside { background: #f4f4f4; padding: 15px; }
+article { background: #fff; padding: 15px; }
+
+/* Float method */
+.float-grail { max-width: 1000px; margin: 0 auto; }
+.float-main { width: 100%; }
+.float-main nav { float: left; width: 20%; }
+.float-main article { float: left; width: 60%; }
+.float-main aside { float: left; width: 20%; }
+.clearfix::after { content: ""; display: table; clear: both; }
+
+/* Flexbox method */
+.flex-grail { display: flex; flex-direction: column; max-width: 1000px; margin: 20px auto; }
+.flex-main { display: flex; flex: 1; }
+.flex-main nav { width: 20%; }
+.flex-main article { flex: 1; }
+.flex-main aside { width: 20%; }
+
+/* Grid method */
+.grid-grail {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav article aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+.grid-grail header { grid-area: header; }
+.grid-grail nav { grid-area: nav; }
+.grid-grail article { grid-area: article; }
+.grid-grail aside { grid-area: aside; }
+.grid-grail footer { grid-area: footer; }
+
+/* Responsive for all */
+@media (max-width: 600px) {
+    .float-main nav, .float-main article, .float-main aside {
+        width: 100%;
+        float: none;
+    }
+    .flex-main {
+        flex-direction: column;
+    }
+    .flex-main nav, .flex-main aside {
+        width: 100%;
+    }
+    .grid-grail {
+        grid-template-areas:
+            "header"
+            "nav"
+            "article"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}

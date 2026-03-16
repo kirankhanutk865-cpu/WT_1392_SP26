@@ -1,0 +1,21 @@
+body { font-family: Arial; padding: 20px; }
+.demo-section { margin-bottom: 30px; border: 1px solid #ccc; padding: 15px; }
+
+.block { display: block; background: lightcoral; margin: 5px 0; padding: 10px; }
+.inline { display: inline; background: lightblue; padding: 5px; margin: 5px; }
+.inline-block { display: inline-block; background: lightgreen; width: 100px; padding: 10px; margin: 5px; text-align: center; }
+
+.table { display: table; width: 100%; border-collapse: collapse; }
+.row { display: table-row; }
+.cell { display: table-cell; border: 1px solid #333; padding: 8px; }
+
+.none { display: none; background: red; }
+.hidden { visibility: hidden; background: yellow; height: 30px; }
+
+/* Responsive utilities */
+@media (min-width: 800px) {
+    .mobile-only { display: none; }
+}
+@media (max-width: 799px) {
+    .desktop-only { display: none; }
+}

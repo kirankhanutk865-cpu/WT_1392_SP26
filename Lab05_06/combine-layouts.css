@@ -1,0 +1,56 @@
+/* Flexbox inside Grid */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.grid-item {
+    background: #f4f4f4;
+    padding: 10px;
+}
+.flex-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.flex-card button {
+    margin-top: auto;
+}
+
+/* Grid inside Flexbox */
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+.flex-item {
+    flex: 1;
+    background: #eee;
+    padding: 10px;
+}
+.mini-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.mini-grid div {
+    background: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Float with modern */
+.float-modern {
+    background: #f9f9f9;
+    padding: 15px;
+    overflow: auto; /* clearfix */
+}
+.float-img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

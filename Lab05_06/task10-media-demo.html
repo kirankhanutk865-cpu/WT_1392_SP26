@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query Demo</title>
+    <link rel="stylesheet" href="task10-media-demo.css">
+</head>
+<body>
+    <div class="breakpoint-indicator">
+        Current breakpoint: <span id="breakpoint"></span>
+    </div>
+    <header>
+        <h1>Media Query Demonstration</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Responsive Typography</h2>
+            <p class="responsive-text">This text size changes at breakpoints.</p>
+        </section>
+        <aside class="sidebar-demo">
+            <h3>Sidebar</h3>
+            <p>This sidebar stacks below on mobile.</p>
+        </aside>
+    </main>
+    <footer>Footer</footer>
+    <script>
+        function updateBreakpoint() {
+            const width = window.innerWidth;
+            let bp = '';
+            if (width < 600) bp = 'Mobile (<600px)';
+            else if (width < 900) bp = 'Tablet (600-899px)';
+            else if (width < 1200) bp = 'Desktop (900-1199px)';
+            else bp = 'Large Desktop (≥1200px)';
+            document.getElementById('breakpoint').textContent = bp;
+        }
+        window.addEventListener('load', updateBreakpoint);
+        window.addEventListener('resize', updateBreakpoint);
+    </script>
+</body>
+</html>

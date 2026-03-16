@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Challenges</title>
+    <link rel="stylesheet" href="float-challenges.css">
+</head>
+<body>
+    <h1>Float Challenges and Solutions</h1>
+
+    <h2>Float Collapse (Without Clearfix)</h2>
+    <div class="collapsed-container">
+        <div class="float-box">Box 1</div>
+        <div class="float-box">Box 2</div>
+    </div>
+    <p>This paragraph is after the container but appears next to floats because container didn't clear them.</p>
+
+    <h2>Clearfix Solution</h2>
+    <div class="clearfix-container clearfix">
+        <div class="float-box">Box 1</div>
+        <div class="float-box">Box 2</div>
+    </div>
+    <p>Now container wraps floats.</p>
+
+    <h2>Equal Height Columns with Floats (Faux Columns)</h2>
+    <div class="equal-height clearfix">
+        <div class="col left">Left column with some content that might be shorter.</div>
+        <div class="col right">Right column with a lot more content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+
+    <h2>Responsive Floats with Media Queries</h2>
+    <div class="responsive-floats clearfix">
+        <div class="resp-box">Box 1</div>
+        <div class="resp-box">Box 2</div>
+        <div class="resp-box">Box 3</div>
+    </div>
+</body>
+</html>

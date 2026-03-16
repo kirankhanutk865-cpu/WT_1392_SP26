@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout Comparison</title>
+    <link rel="stylesheet" href="task7-holy-grail.css">
+</head>
+<body>
+    <h1>Holy Grail Layout: Three Methods</h1>
+
+    <h2>1. Float-based (with clearfix)</h2>
+    <div class="float-grail">
+        <header>Header</header>
+        <div class="float-main clearfix">
+            <nav>Nav</nav>
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+
+    <h2>2. Flexbox-based</h2>
+    <div class="flex-grail">
+        <header>Header</header>
+        <div class="flex-main">
+            <nav>Nav</nav>
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+
+    <h2>3. CSS Grid-based</h2>
+    <div class="grid-grail">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

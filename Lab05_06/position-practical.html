@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical Positioning</title>
+    <link rel="stylesheet" href="position-practical.css">
+</head>
+<body>
+    <h1>Practical Positioning</h1>
+
+    <h2>Overlapping Elements with z-index</h2>
+    <div class="overlap-container">
+        <div class="box box1">Box 1 (z-index: 1)</div>
+        <div class="box box2">Box 2 (z-index: 2)</div>
+        <div class="box box3">Box 3 (z-index: 3)</div>
+    </div>
+
+    <h2>Modal Dialog</h2>
+    <button id="showModal">Show Modal</button>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a modal dialog.</p>
+        </div>
+    </div>
+
+    <h2>Sticky Header</h2>
+    <header class="sticky-header">I'm a sticky header</header>
+    <div style="height: 1000px;">Scroll content...</div>
+
+    <h2>Tooltip</h2>
+    <div class="tooltip-container">
+        Hover over me
+        <span class="tooltip">I'm a tooltip</span>
+    </div>
+
+    <script>
+        // Simple modal toggle
+        document.getElementById('showModal').onclick = function() {
+            document.getElementById('modal').style.display = 'block';
+        }
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('modal').style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('modal')) {
+                document.getElementById('modal').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

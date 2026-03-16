@@ -1,0 +1,69 @@
+.float-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: coral;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.collapsed-container {
+    background: #eee;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix-container {
+    background: #eee;
+    padding: 10px;
+}
+
+/* Equal height columns using background image or large padding/margin trick */
+.equal-height {
+    background: #f4f4f4;
+    overflow: hidden; /* alternative clearfix */
+}
+.equal-height .col {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: lightblue;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;  /* faux columns trick */
+}
+.equal-height .right {
+    margin-right: 0;
+    background: lightgreen;
+}
+
+/* Responsive floats */
+.responsive-floats .resp-box {
+    float: left;
+    width: 31.333%;
+    margin-right: 2%;
+    background: steelblue;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.resp-box:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 600px) {
+    .responsive-floats .resp-box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,34 @@
+.block {
+    display: block;
+    background: lightcoral;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.inline {
+    display: inline;
+    background: lightblue;
+    padding: 5px;
+    margin: 5px;  /* margin only works left/right for inline */
+}
+
+.inline-block {
+    display: inline-block;
+    background: lightgreen;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.none {
+    display: none;
+    background: red;
+}
+
+.hidden {
+    visibility: hidden;
+    background: yellow;
+    height: 50px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Grid</title>
+    <link rel="stylesheet" href="grid-advanced.css">
+</head>
+<body>
+    <h1>Advanced Grid Features</h1>
+
+    <h2>Fractional Units (fr)</h2>
+    <div class="grid fr">
+        <div>1fr</div>
+        <div>2fr</div>
+        <div>1fr</div>
+    </div>
+
+    <h2>minmax() for responsive tracks</h2>
+    <div class="grid minmax">
+        <div>min 100px</div>
+        <div>max 1fr</div>
+        <div>auto</div>
+    </div>
+
+    <h2>repeat() pattern</h2>
+    <div class="grid repeat">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <h2>auto-fit vs auto-fill</h2>
+    <h3>auto-fit</h3>
+    <div class="grid auto-fit">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>auto-fill</h3>
+    <div class="grid auto-fill">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2>Grid Line Naming</h2>
+    <div class="grid named-lines">
+        <div class="item">Item spanning named lines</div>
+    </div>
+</body>
+</html>w22

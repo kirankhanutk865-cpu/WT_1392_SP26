@@ -1,0 +1,30 @@
+body { font-family: Arial; padding: 20px; transition: background-color 0.3s, color 0.3s; }
+.box { width: 200px; height: 200px; background: lightblue; display: flex; align-items: center; justify-content: center; transition: transform 0.3s; }
+.box:hover { transform: scale(1.1); }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body { background: #222; color: #eee; }
+    .box { background: #444; color: white; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .box, .box:hover {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* High contrast */
+@media (prefers-contrast: high) {
+    body { background: black; color: white; }
+    .box { border: 3px solid yellow; }
+}
+
+/* Print */
+@media print {
+    body { font-size: 12pt; color: black; background: white; }
+    .box { border: 1px solid black; background: none; }
+    button { display: none; }
+}

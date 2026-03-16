@@ -1,0 +1,55 @@
+
+.float-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Two-column layout */
+.two-column .column {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    background: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.two-column .right {
+    margin-right: 0;
+}
+
+/* Three-column layout */
+.three-column .col {
+    float: left;
+    width: 31.333%;
+    margin-right: 2%;
+    background: lightgreen;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.three-column .col3 {
+    margin-right: 0;
+}
+
+/* Clearfix hack */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Float boxes */
+.float-container {
+    background: #f4f4f4;
+    padding: 10px;
+}
+.float-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: coral;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
